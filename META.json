@@ -1,0 +1,72 @@
+{
+   "abstract" : "queue manager for Workman",
+   "author" : [
+      "karupanerura <karupa@cpan.org>"
+   ],
+   "dynamic_config" : 0,
+   "generated_by" : "Minilla/v2.1.1, CPAN::Meta::Converter version 2.141520",
+   "license" : [
+      "perl_5"
+   ],
+   "meta-spec" : {
+      "url" : "http://search.cpan.org/perldoc?CPAN::Meta::Spec",
+      "version" : "2"
+   },
+   "name" : "Workman-Queue-Gearman",
+   "no_index" : {
+      "directory" : [
+         "t",
+         "xt",
+         "inc",
+         "share",
+         "eg",
+         "examples",
+         "author",
+         "builder"
+      ]
+   },
+   "prereqs" : {
+      "configure" : {
+         "requires" : {
+            "Module::Build::Tiny" : "0.035",
+            "perl" : "5.008_001"
+         }
+      },
+      "develop" : {
+         "requires" : {
+            "Test::CPAN::Meta" : "0",
+            "Test::MinimumVersion::Fast" : "0.04",
+            "Test::PAUSE::Permissions" : "0.04",
+            "Test::Pod" : "1.41",
+            "Test::Spellunker" : "v0.2.7"
+         }
+      },
+      "runtime" : {
+         "requires" : {
+            "AnyEvent" : "0",
+            "AnyEvent::Gearman::Client" : "0",
+            "AnyEvent::Gearman::Worker" : "0",
+            "Class::Accessor::Lite" : "0",
+            "JSON::XS" : "0",
+            "Log::Minimal" : "0",
+            "Workman::Job" : "0",
+            "Workman::Queue" : "0",
+            "Workman::Request" : "0",
+            "Workman::Server::Exception::DequeueAbort" : "0",
+            "parent" : "0"
+         }
+      },
+      "test" : {
+         "requires" : {
+            "AnyEvent::Loop" : "0",
+            "File::Which" : "0",
+            "Test::More" : "0",
+            "Test::TCP" : "0",
+            "Workman::Test::Queue" : "0"
+         }
+      }
+   },
+   "release_status" : "unstable",
+   "version" : "0.01",
+   "x_authority" : "cpan:KARUPA"
+}
