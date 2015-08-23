@@ -1,9 +1,7 @@
-requires 'AnyEvent';
-requires 'AnyEvent::Gearman::Client';
-requires 'AnyEvent::Gearman::Worker';
 requires 'Class::Accessor::Lite';
 requires 'JSON::XS';
 requires 'Log::Minimal';
+requires 'Queue::Gearman';
 requires 'Workman::Job';
 requires 'Workman::Queue';
 requires 'Workman::Request';
@@ -16,7 +14,6 @@ on configure => sub {
 };
 
 on test => sub {
-    requires 'AnyEvent::Loop';
     requires 'File::Which';
     requires 'Test::More';
     requires 'Test::TCP';

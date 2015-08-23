@@ -4,8 +4,6 @@ use Test::More;
 use Test::TCP;
 use File::Which qw/which/;
 
-use AnyEvent::Loop;
-use AnyEvent;
 use Workman::Test::Queue;
 use Workman::Queue::Gearman;
 
@@ -19,4 +17,4 @@ my $gearmand = Test::TCP->new(
 );
 
 my $queue = Workman::Queue::Gearman->new(job_servers => ['127.0.0.1:'.$gearmand->port]);
-Workman::Test::Queue->new($queue)->run;
+Workman::Test::Queue->new($queue)->run();
