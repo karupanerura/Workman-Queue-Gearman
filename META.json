@@ -4,7 +4,7 @@
       "karupanerura <karupa@cpan.org>"
    ],
    "dynamic_config" : 0,
-   "generated_by" : "Minilla/v2.1.1, CPAN::Meta::Converter version 2.141520",
+   "generated_by" : "Minilla/v2.4.3, CPAN::Meta::Converter version 2.150005",
    "license" : [
       "perl_5"
    ],
@@ -43,12 +43,10 @@
       },
       "runtime" : {
          "requires" : {
-            "AnyEvent" : "0",
-            "AnyEvent::Gearman::Client" : "0",
-            "AnyEvent::Gearman::Worker" : "0",
             "Class::Accessor::Lite" : "0",
             "JSON::XS" : "0",
             "Log::Minimal" : "0",
+            "Queue::Gearman" : "0",
             "Workman::Job" : "0",
             "Workman::Queue" : "0",
             "Workman::Request" : "0",
@@ -58,7 +56,6 @@
       },
       "test" : {
          "requires" : {
-            "AnyEvent::Loop" : "0",
             "File::Which" : "0",
             "Test::More" : "0",
             "Test::TCP" : "0",
@@ -67,6 +64,18 @@
       }
    },
    "release_status" : "unstable",
+   "resources" : {
+      "bugtracker" : {
+         "web" : "https://github.com/karupanerura/Workman-Queue-Gearman/issues"
+      },
+      "homepage" : "https://github.com/karupanerura/Workman-Queue-Gearman",
+      "repository" : {
+         "type" : "git",
+         "url" : "git://github.com/karupanerura/Workman-Queue-Gearman.git",
+         "web" : "https://github.com/karupanerura/Workman-Queue-Gearman"
+      }
+   },
    "version" : "0.01",
-   "x_authority" : "cpan:KARUPA"
+   "x_authority" : "cpan:KARUPA",
+   "x_serialization_backend" : "JSON::PP version 2.27300"
 }
