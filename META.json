@@ -4,7 +4,7 @@
       "karupanerura <karupa@cpan.org>"
    ],
    "dynamic_config" : 0,
-   "generated_by" : "Minilla/v2.4.3, CPAN::Meta::Converter version 2.150005",
+   "generated_by" : "Minilla/v3.0.2, CPAN::Meta::Converter version 2.150005",
    "license" : [
       "perl_5"
    ],
@@ -34,6 +34,7 @@
       },
       "develop" : {
          "requires" : {
+            "Gearman::Server" : "0",
             "Test::CPAN::Meta" : "0",
             "Test::MinimumVersion::Fast" : "0.04",
             "Test::PAUSE::Permissions" : "0.04",

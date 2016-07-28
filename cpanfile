@@ -19,3 +19,7 @@ on test => sub {
     requires 'Test::TCP';
     requires 'Workman::Test::Queue';
 };
+
+on develop => sub {
+    requires 'Gearman::Server';
+};
